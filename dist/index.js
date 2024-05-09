@@ -41974,7 +41974,7 @@ const workspace = process.env.GITHUB_WORKSPACE;
 function logOutputParameters(syncedFiles) {
     (0,core.setOutput)('modified-keys', syncedFiles.join(','));
 }
-
+//# sourceMappingURL=github.js.map
 ;// CONCATENATED MODULE: ./lib/inputs.js
 
 function getInputs() {
@@ -42046,7 +42046,7 @@ function getInputs() {
         syncStrategy,
     };
 }
-
+//# sourceMappingURL=inputs.js.map
 ;// CONCATENATED MODULE: external "node:path"
 const external_node_path_namespaceObject = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:path");
 ;// CONCATENATED MODULE: external "node:fs"
@@ -49611,7 +49611,7 @@ class AsyncBatchQueue {
         })));
     }
 }
-
+//# sourceMappingURL=AsyncBatchQueue.js.map
 ;// CONCATENATED MODULE: ./lib/s3.js
 
 
@@ -49657,7 +49657,7 @@ function getObjectKeyFromFilePath(rootDir, absoluteFilePath, prefix, stripExtens
 function getContentTypeForExtension(extension) {
     const contentType = mime_types.lookup(extension);
     if (contentType === false) {
-        throw new Error(`Unable to detect content-type for ${extension}`);
+        return 'text/plain';
     }
     return contentType;
 }
@@ -49854,7 +49854,7 @@ async function emptyS3Directory(client, s3BucketName, prefix, initialObjectsClea
     }
     return totalObjectsCleaned;
 }
-
+//# sourceMappingURL=s3.js.map
 ;// CONCATENATED MODULE: ./lib/main.js
 
 
@@ -49891,7 +49891,7 @@ async function run() {
     }
 }
 void run();
-
+//# sourceMappingURL=main.js.map
 })();
 
 var __webpack_exports__run = __webpack_exports__.K;
