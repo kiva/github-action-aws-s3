@@ -72,7 +72,7 @@ export function getObjectKeyFromFilePath(
 function getContentTypeForExtension(extension: string): string {
   const contentType = mime.lookup(extension);
   if (contentType === false) {
-    throw new Error(`Unable to detect content-type for ${extension}`);
+    return 'text/plain';
   }
   return contentType;
 }

@@ -100,3 +100,5 @@ lib/
 
 # direnv
 .envrc
+
+.vscode
